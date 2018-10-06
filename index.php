@@ -15,7 +15,8 @@
         <form class="form-group" action="" method="post">
           <input type="text" class="form-control" id="txt" placeholder="Where are you from ?"/>
           <input type="text" class="form-control" id="txt" placeholder="Is your Place Clean ?"/>
-            <input type="text" class="form-control" id="txt" name="" placeholder="Where ?"/>
+          <input type="email" class="form-control" id="txt" placeholder="Your Email"/>
+          <input type="text" class="form-control" id="txt" name="" placeholder="Where ?"/>
           <button class="form-control btn btn-block " id="submit" type="submit">Submit</button>
         </form>
       </div>
