@@ -1,0 +1,38 @@
+*{margin:0px; padding:0px;}
+
+body{
+background:#ebebeb;
+}
+
+header{
+  height:40px;
+  width: 100%;
+  background: #53D86A;
+}
+
+.a{
+  height: 70vh;
+  width: 100%;
+  background: #fff;
+}
+
+
+
+.box{
+  height: 40vh;
+  background: #fff;
+  border:1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#txt{
+  margin: 10px;
+}
+
+#submit{
+  background: #53D86A;
+  color:#fff;
+}
