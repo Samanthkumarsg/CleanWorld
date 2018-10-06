@@ -8,6 +8,15 @@ header{
   height:40px;
   width: 100%;
   background: #53D86A;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+#logo{
+  font:2em calibri;
+  color:#fff; 
 }
 
 .a{
@@ -25,20 +34,22 @@ header{
   border:1px solid #ebebeb;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 
 }
 
 #txt{
   margin: 10px;
+  outline: none;
 }
 
 #txt:focus{
-  outline-color: #53D86A;
+  border-color: #53D86A;
 }
 
 
 #submit{
+
   background: #53D86A;
   color:#fff;
 }

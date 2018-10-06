@@ -8,20 +8,28 @@
   </head>
   <script src="script.js"></script>
   <body>
-    <header></header>
+    <header>
+      <span id="logo">Clean World</span>
+    </header>
     <div class="container-fluid a">
       <div class="row justify-content-center">
-      <div class="col-md-4 box" >
-        <form class="form-group" action="" method="post">
-          <input type="text" class="form-control" id="txt" placeholder="Where are you from ?"/>
-          <input type="text" class="form-control" id="txt" placeholder="Is your Place Clean ?"/>
-          <input type="email" class="form-control" id="txt" placeholder="Your Email"/>
-          <input type="text" class="form-control" id="txt" name="" placeholder="Where ?"/>
-          <button class="form-control btn btn-block " id="submit" type="submit">Submit</button>
-        </form>
+      <div class="col-md-4 box">
+
+<?php
+      include 'main.php';
+
+      echo "<form class='form-group' action='".Insertdata($conn)."' method='POST' enctype='multipart/form-data'>
+          <input type='text' class='form-control' id='txt' name='userlocation' placeholder='Where are you from ?'/>
+          <input type='text' class='form-control' id='txt' name='location' placeholder='Where do you want to Clean ? '/>
+          <input type='email' class='form-control' id='txt' name='email' placeholder='Your Email' required/>
+          <input type='text' class='form-control' id='txt' name='description' placeholder='Talk more about your place'/>
+          <input type='file' class='form-control-file border' id='txt' name='image' />
+          <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'/>
+          <button class='form-control btn btn-md ' id='submit' type='submit'> Submit </button>
+        </form>";
+ ?>
       </div>
     </div>
       </div>
-    </div>
   </body>
   </html>
